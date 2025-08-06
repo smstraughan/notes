@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+</head>
+<body>
+    <h1>HTML Notes:</h1>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- This is how to leave comments in HTML-->
+      <!--Below I practice HTML styling text elements-->
+    <p>Practicing Text Elements <b>BOLDED</b> <i>italicized</i> <sup>superscript</sup> regular text</p>
+    <p>Practicing Anchors and Images with relative and absolute paths</p>
+
+    <!-- a is the anchor tag (links) and img is the tag for an image-->
+    <a href="https://google.com"> Take me to Google!</a> <br> 
+    <a href="https://google.com"target="_blank" rel="noopener noreferrer"> Take me to Google!</a> <br> <!--The target=_blank opens a new tab and the rel= has something to do with security that I don't fully understand-->
+    <!--To prevent potential security risks, such as the new page being able to access your window object via window.opener, you can also include the rel="noopener noreferrer" attribute-->
+    <a href="page2.html">Page 2</a> <br><!-- relative path-->
+    <a href="pages/page3.html">Page 3</a> <br>
+
+    <img height=500px src="gator.jpg" /> <br>
+    <img src="https://res.cloudinary.com/digicomm/image/upload/t_full-banner-small/news-magazine/2023/_assets/alligator.jpg"/>
+
+    <h3> Lists and Tables</h3>
+
+    <h4>Race Results (ordered list)</h4>
+    <ol>
+        <li>Sally</li>
+        <li>Tommy</li>
+        <li>Sammy</li>
+    </ol>
+
+    <h4>Grocery List (Unordered List)</h4>
+    <ul>
+        <li>Apple</li>
+        <li>Bread</li>
+        <li>Eggs</li>
+    </ul>
+
+    <h3>Table Example</h3>
+    <table>
+        <tr> <!--tr creates a row, th is table head-->
+           <th>Product</th>
+           <th>Price</th>
+           <th>Quantity</th> 
+        </tr>
+        <tr> <!--creates a row, td is table data-->
+            <td>Apple</td>
+            <td>.35</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td>Bread</td>
+            <td>2.35</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <h3>Inline vs Block</h3>
+    <ul>
+        <li>Inline and block are elements that help us structure and group content together</li>
+        <li>Block elements take up the entire width of their parent</li>
+        <ul>
+            <li>Ex. Creating 2 block elements next two eachother will put them on different lines even if there is enough room for them side by side</li>
+        </ul>
+        <li>Inline elements - multiple can fit on or in the same line</li>
+        <li>HTML structure elements fall in to block or Inline</li>
+        <li>Two main structure elements are div and span</li>
+        <ul>
+            <li>Div is a block level element</li>
+            <li>span is inline - multiple can fit in same line</li>
+        </ul>
+        <li>These elements help us organize our content that then we can refer to from CSS and JS</li>
+        <li>Divs and spans are practiced in this code but will not be visible on the rendered html</li>
+        </ul>
+
+        <div>
+            <h4>Div 1</h4>
+            <p>Div 1 paragraph</p>
+            <div><p>can create divs inside of divs</p>
+            </div>
+        </div>
+
+        <div>
+            <h4>Div 2</h4>
+            <p>Div 2 paragraph - or can create multiple divs outside of eachother</p>
+        </div>
+        
+        <h4>Span</h4>
+
+        <p>This is some text, <span><b>here is some text inside a span that I bolded</b></span>, and here is some text outside a span</p>
+
+        <h3>Forms</h3>
+
+        <form action="">
+            <input type="text" name="FirstName" placeholder="First Name"><br>
+            <input type="text" name="LastName" placeholder="Last Name"><br><br>
+            Ice Cream Preference: <br>
+            <input type="radio" name="ice-cream" value="Chocolate"> Chocolate <br>
+            <input type="radio" name="ice-cream" value="Vanilla"> Vanilla <br>
+            <input type="radio" name="ice-cream" value="Swirl"> Swirl <br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <button>Click Me!</button><!--Adds a button that will be able to do something once you add JS-->
+
+
+
+</body>
+</html>
