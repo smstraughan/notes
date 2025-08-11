@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Below is an example of internal CSS coding. Its not great because any updates would have to be added across pages on a multi page website
+    <style>
+        body{
+            background-color: rgb(38,113,235);
+        }
+        h4{
+            color:goldenrod
+        }
+        div{
+            background-color:cornflowerblue;
+            border-color:black;
+            border-radius: 5px;
+        }
+
+        
+        .shadow-text{
+            text-shadow: gray 1px 1px;
+        } 
+
+        #large-paragraph{
+            font-size: 30px;
+        }
+    </style> .shadow-text is an example of creating our own css class and then applying it inline to an html element,
+                  #large-pargraph is an example of creating an id tag inline and then styling internaling using the id tag-->
+</head>
+<body>
+<!--Another way to style the background inline is to put background color in the body tag-->
+    <h1>CSS Notes:</h1>
+    <ul>
+        <li>There are three ways to code CSS--inline, internal, and external.</li>
+        <ul><li>Inline - CSS code is added in line to the html code. This is discouraged. Example in the code comments of this page.</li>
+            <li>Internal - CSS code is added to "style" section in the head of the html code. Still not prefered. Example commented in the comments of this page.</li>
+            <li>External - <b>*Prefered*</b> CSS code written in a separate .css document. Can be applied to multiple pages of a webpage easily. Then add code to document as a link in head. This is how this webpage is styled.</li>
+        </ul>
+        </li></ul>
+    </ul>
+<!--
+    <h3>Examples of inline CSS (only visible in code)</h3>
+    <h4 style="color:goldenrod">Styled Heading</h4>
+    <div style="background-color:cornflowerblue;border-color:black;border-radius: 5px"> border radius creates a rounded border
+        <p style="text-shadow: gray 1px 1px">This is a styled paragraph</p>
+        <p style = "font-size: 30px;">This is another styled paragraph</p>
+    </div>
+-->
+    
+   <h3>Examples of Internal CSS (only visible in code)</h3>
+    <h4>Styled Heading</h4>
+    <div> 
+        <p class="shadow-text">This is a styled paragraph</p>
+        <p id="large-paragraph">This is another styled paragraph</p>
+    </div>
+</body>
+</html>
