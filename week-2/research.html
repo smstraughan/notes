@@ -3,9 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Research</title>
 </head>
 <body>
-    
+    <h1>CSS Research Week 2</h1>
+
+    <h3>Prompts</h3>
+    <ol>
+        <li>What are CSS grid and flexbox? When might you use one over the other?</li>
+        <li>Explore the use of CSS custom properties (variables) and their benefits in managing reusable styles and theming. Research how CSS variables can improve code maintainability and enable dynamic styling changes.</li>
+        <li>Investigate the role of CSS in ensuring sufficient contrast and color accessibility for users with visual impairments. Research techniques for implementing accessible color schemes.</li>
+        <li>Investigate the usage and benefits of CSS selectors. Research the different types of selectors, such as element selectors, class selectors, ID selectors, and pseudo-classes. Explore how selectors allow you to target specific elements or groups of elements for styling. Provide examples of common use cases for each type of selector and best practices for writing efficient and maintainable CSS selectors.</li>
+        <li>Explore the CSS box model and its significance in determining the layout and spacing of elements on a webpage. Research the components of the box model, including content, padding, border, and margin.</li>
+    </ol>
+
+    <h3>Answers</h3>
+    <ol>
+        <li>CSS grid and flexbox are two layout options that allow developers to design responsive websites without using float or positioning. Grid should be used when the layout is 2D with rows and columns. flexbox should be used when the layout is 1D, rows OR columns.</li>
+        <li>CSS variables are used to name design elements that are generally used across the entire document. They are named in a singular location on the document (usually in a root section) and then are easily changed and maintained. It also has access to the DOM (Document Object Model) and therefore can be accessed by Javascript</li>
+        <li>CSS sets things like background color, text color, text size, text font, etc, all things that contribute to and impact readability of a webpage. There is WCAG (Web Content Accessibility Guidelines) that have standards that need to be met for vision impairment and color blindness. There are many tools online to check accessibility. There are colorblind color pallette guides and web extensions that allow you to check WCAG guidlines on your page.</li>
+        <li>CSS selectors allow you to target different items in your html code or styling. Element selectors are based on the element type such as p or h1, using an element selector would target all paragraphs or h1 headers on an html webpage. An id selector will select a specfic id within a page to target for css styling and is named by putting a hashtag before the id name. Class selectors will select all elements of a particular class (or can be specified elements of a particular class such as p or h) and is named by putting a dot before the class name. There are also more advanced selectors such as psuedo class selectors that select an element based on a particular state.</li>
+        <li>The CSS Box Model refers to the fact that all elements can be considered boxes. The boxes include content, padding (transparent space around content), border (box around content and padding), and margin (transparent space around border). The box model is important for layout because it allows us to think about the true dimensions of elements and how they will layout on a page.  </li>
+    </ol>
 </body>
 </html>
+
